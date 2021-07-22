@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 80px;
+  font-size: 1rem;
+}
+body {
+  background: url("../images/bg.jpg") no-repeat top center;
+  line-height: 1.15;
+}
+body header {
+  height: 1.25rem;
+  background: url("../images/head_bg.png") no-repeat;
+  background-size: 100% 100%;
+}
+body header h1 {
+  line-height: 1rem;
+  font-size: 0.475rem;
+  text-align: center;
+  color: white;
+}
+body header .showTime {
+  position: absolute;
+  right: 0.375rem;
+  top: 0;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.15rem;
+  line-height: 0.375rem;
+}
+body main {
+  display: flex;
+  min-width: 1024px;
+  max-width: 1920px;
+  margin: 0 auto;
+  color: white;
+  padding: 0.125rem 0.125rem 0 0.125rem;
+}
+body main .column {
+  flex: 3;
+  /* 声明字体*/
+}
+body main .column:nth-child(2) {
+  flex: 5;
+  margin: 0 0.125rem 0.1875rem 0.125rem;
+}
+body main .column .panel {
+  position: relative;
+  height: 3.875rem;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+  background: url("../images/line\(1\).png") rgba(255, 255, 255, 0.04);
+  padding: 0 0.1875rem 0.5rem 0.1875rem;
+  margin-bottom: 0.1875rem;
+}
+body main .column .panel::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+body main .column .panel::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #02a6b5;
+  border-top: 2px solid #02a6b5;
+  content: "";
+}
+body main .column .panel .panel-footer::before {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+}
+body main .column .panel .panel-footer::after {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid #02a6b5;
+  border-bottom: 2px solid #02a6b5;
+  content: "";
+}
+body main .column .panel h2 {
+  height: 0.6rem;
+  color: white;
+  line-height: 0.6rem;
+  text-align: center;
+  font-size: 0.25rem;
+  font-weight: 400;
+}
+body main .column .panel .chart {
+  height: 3rem;
+}
+@font-face {
+  font-family: electronicFont;
+  src: url(../font/DS-DIGIT.TTF);
+}
+body main .column .no {
+  background: rgba(101, 132, 226, 0.1);
+  padding: 0.1875rem;
+}
+body main .column .no .no_hd {
+  position: relative;
+  border: 1px solid rgba(25, 186, 139, 0.17);
+}
+body main .column .no .no_hd::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  border-top: 2px solid #02a6b5;
+  border-left: 2px solid #02a6b5;
+  top: 0;
+  left: 0;
+}
+body main .column .no .no_hd::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 10px;
+  border-bottom: 2px solid #02a6b5;
+  border-right: 2px solid #02a6b5;
+  right: 0;
+  bottom: 0;
+}
+body main .column .no .no_hd ul {
+  display: flex;
+}
+body main .column .no .no_hd ul li {
+  list-style: none;
+  position: relative;
+  flex: 1;
+  text-align: center;
+  height: 1rem;
+  line-height: 1rem;
+  font-size: 0.875rem;
+  color: #ffeb7b;
+  padding: 0.05rem 0;
+  font-family: electronicFont;
+  font-weight: bold;
+}
+body main .column .no .no_hd ul li:first-child::after {
+  content: "";
+  position: absolute;
+  height: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  right: 0;
+  top: 25%;
+}
+body main .column .no .no_bd ul {
+  display: flex;
+}
+body main .column .no .no_bd ul li {
+  list-style: none;
+  flex: 1;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  font-size: 0.225rem;
+  color: rgba(255, 255, 255, 0.7);
+  padding-top: 0.125rem;
+}
+body main .column .map {
+  height: 10.125rem;
+  position: relative;
+}
+body main .column .map .map1 {
+  height: 6.475rem;
+  width: 6.475rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../images/map.png");
+  background-size: 100% 100%;
+  opacity: 0.3;
+}
+body main .column .map .map2 {
+  height: 8.0375rem;
+  width: 8.0375rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../images/lbx.png");
+  background-size: 100% 100%;
+  animation: rotate1 15s linear infinite;
+  opacity: 0.3;
+}
+body main .column .map .map3 {
+  height: 7.075rem;
+  width: 7.075rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: url("../images/jt.png");
+  background-size: 100% 100%;
+  animation: rotate2 15s linear infinite;
+  opacity: 0.6;
+}
+body main .column .map .chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 10.125rem;
+  width: 100%;
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
