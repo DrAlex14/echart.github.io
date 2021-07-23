@@ -117,7 +117,8 @@
     长治: [112.8625, 36.4746],
     阳泉: [113.4778, 38.0951],
     青岛: [120.4651, 36.3373],
-    韶关: [113.7964, 24.7028]
+    韶关: [113.7964, 24.7028],
+    曹县: [115.53,34.83],
   };
 
   var XAData = [
@@ -127,7 +128,15 @@
     [{ name: "西安" }, { name: "西宁", value: 100 }],
     [{ name: "西安" }, { name: "拉萨", value: 100 }],
     [{ name: "长沙" }, { name: "长春", value: 100 }],
-    [{ name: "柳州" }, { name: "南京", value: 100 }]
+    [{ name: "南京" }, { name: "柳州", value: 200 }],
+    [{ name: "南京" }, { name: "曹县", value: 80 }],
+    [{ name: "北京" }, { name: "曹县", value: 80 }],
+    [{ name: "上海" }, { name: "曹县", value: 80 }],
+    [{ name: "西安" }, { name: "曹县", value: 80 }],
+    [{ name: "青岛" }, { name: "曹县", value: 80 }],
+    [{ name: "长沙" }, { name: "曹县", value: 80 }],
+    [{ name: "长春" }, { name: "曹县", value: 80 }],
+    [{ name: "哈尔滨" }, { name: "曹县", value: 80 }],
   ];
 
   var XNData = [
@@ -135,7 +144,8 @@
     [{ name: "西宁" }, { name: "上海", value: 100 }],
     [{ name: "西宁" }, { name: "广州", value: 100 }],
     [{ name: "西宁" }, { name: "西安", value: 100 }],
-    [{ name: "西宁" }, { name: "银川", value: 100 }]
+    [{ name: "西宁" }, { name: "银川", value: 100 }],
+    [{ name: "西宁" }, { name: "厦门", value: 150 }],
   ];
 
   var YCData = [
