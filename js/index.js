@@ -107,7 +107,7 @@
   // (1)准备数据
   var data = {
     year: [
-      [24, 40, 101, 134, 90, 230, 210, 230, 120, 230, 210, 120],
+      [24, 40, 101, 134, 90, 230, 210, 230, 320, 212, 440, 650],
       [40, 64, 191, 324, 290, 330, 310, 213, 180, 200, 180, 79]
     ]
   };
@@ -211,6 +211,11 @@
   myChart.setOption(option);
   window.addEventListener("resize", function() {
     myChart.resize();
+  });
+  $(".line h2 ").on("click", "a", function() {
+    debugger
+    option.series[0].data = data.year[$(this).index()];
+    myChart.setOption(option);
   });
 })();
 

@@ -40,6 +40,7 @@ body{
             &:nth-child(2){
                 flex: 5;
                 margin: 0 .125rem .1875rem .125rem;
+                overflow: hidden;
             }
             .panel{
                 position: relative;
@@ -97,6 +98,10 @@ body{
                     text-align: center;
                     font-size: .25rem;
                     font-weight: 400;
+                    a{
+                        font-size: .25rem;
+                        color: #fff;
+                    }
                 }
                 .chart{
                     height: 3rem;
@@ -242,5 +247,17 @@ body{
                 }
             }
         }
+    }
+}
+
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 42px !important;
+    }
+}
+@media screen and (min-width: 1920px) {
+    html {
+        font-size: 80px !important;
     }
 }

@@ -43,6 +43,7 @@ body main .column {
 body main .column:nth-child(2) {
   flex: 5;
   margin: 0 0.125rem 0.1875rem 0.125rem;
+  overflow: hidden;
 }
 body main .column .panel {
   position: relative;
@@ -99,6 +100,10 @@ body main .column .panel h2 {
   text-align: center;
   font-size: 0.25rem;
   font-weight: 400;
+}
+body main .column .panel h2 a {
+  font-size: 0.25rem;
+  color: #fff;
 }
 body main .column .panel .chart {
   height: 3rem;
@@ -234,5 +239,16 @@ body main .column .map .chart {
   }
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
   }
 }
